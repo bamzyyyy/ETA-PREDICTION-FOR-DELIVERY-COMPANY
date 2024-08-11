@@ -10,7 +10,7 @@ Developed a machine learning model to accurately predict the estimated time of a
 
 | Project Name | Deployed App | Streamlit website application |
 |------|------|-------------------|
-| Yassir ETA prediction |  | 
+| Yassir ETA prediction | <a href="http://localhost:8501/" target="_blank">Deployed App on Docker</a>  | 
 
 The project is guided by the CRISP-DM (Cross-Industry Standard Process for Data Mining) framework.
 
