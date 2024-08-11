@@ -6,5 +6,4 @@
 /.streamlit/config.yaml
 /.DS_Store
 /.streamlit/salt_pword_hash.py
-
-
+/.streamlit

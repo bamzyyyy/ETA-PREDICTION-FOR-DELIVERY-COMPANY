@@ -1,4 +1,4 @@
-FROM python:3.12.3
+FROM python:3.9.6
 
 WORKDIR /app
 
@@ -20,6 +20,6 @@ COPY . /app
 
 #WORKDIR /app
 
-EXPOSE 3000
+EXPOSE 8501
 
 CMD ["streamlit", "run", "webapp.py", "--server.port=8501"]
