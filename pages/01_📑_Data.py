@@ -99,16 +99,13 @@ def data_dict():
 
     with st.expander('Click to see data dictionary'):
         st.write("""
-            - date
-            - dewpoint_2m_temperature
-            - maximum_2m_air_temperature
-            - mean_2m_air_temperature
-            - mean_sea_level_pressure
-            - minimum_2m_air_temperature
-            - surface_pressure
-            - total_precipitation
-            - u_component_of_wind_10m
-            - v_component_of_wind_10m
+            - ID 
+            - Timestamp
+            - Origin_lat 
+            - Origin_lon
+            - Destination_lat
+            - Destination_lon
+            - Trip_distance
         """)
 
 if st.session_state['authentication_status']:
