@@ -105,7 +105,7 @@ authenticator = stauth.Authenticate(
 name, authentication_status, username = authenticator.login(location='sidebar')
 
 # User login and authentication logic
-if authentication_status:
+if st.session_state['authentication_status']:
     st.sidebar.write(f'Welcome {username}')
     authenticator.logout(location='sidebar')
 
@@ -129,10 +129,10 @@ if authentication_status:
 
     background()
 
-elif authentication_status is False:
+elif st.session_state['authentication_status'] is False:
     st.info('Invalid Email/Password 😕')
 
-elif authentication_status is None:
+elif st.session_state['authentication_status'] is None:
     st.info('Please use the test account below to access the app')
 
     if st.sidebar.button('Create Password'):
@@ -163,3 +163,4 @@ elif authentication_status is None:
         Username: guser
         Password: guestuser
     """)
+
