@@ -8,3 +8,5 @@
 /.streamlit/salt_pword_hash.py
 /.streamlit
 /render.yaml
+/saltbook
+/saltbook/salt_hash.ipynb

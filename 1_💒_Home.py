@@ -20,7 +20,7 @@ def background():
     with col2:
         st.caption("""
             For more information about me, checkout my
-            :red[[GitHub](https://github.com/Koanim/ETA-PREDICTION-FOR-DELIVERY-COMPANY), [LinkedIn](https://www.linkedin.com/in/aminudesmond/)]""")
+            :red[[GitHub](https://github.com/Koanim/ETA-PREDICTION-FOR-DELIVERY-COMPANY), [LinkedIn](https://www.linkedin.com/in/victor-anim-83115818/), [Medium](https://medium.com/@victor.nyarko)]""")
 
         st.caption("##### Contact Me 📧")
         st.caption(""" 
@@ -105,7 +105,7 @@ authenticator = stauth.Authenticate(
 name, authentication_status, username = authenticator.login(location='sidebar')
 
 # User login and authentication logic
-if st.session_state['authentication_status']:
+if authentication_status:
     st.sidebar.write(f'Welcome {username}')
     authenticator.logout(location='sidebar')
 
@@ -129,10 +129,10 @@ if st.session_state['authentication_status']:
 
     background()
 
-elif st.session_state['authentication_status'] is False:
+elif authentication_status is False:
     st.info('Invalid Email/Password 😕')
 
-elif st.session_state['authentication_status'] is None:
+elif authentication_status is None:
     st.info('Please use the test account below to access the app')
 
     if st.sidebar.button('Create Password'):
